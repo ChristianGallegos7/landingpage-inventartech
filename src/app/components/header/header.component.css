@@ -1,0 +1,29 @@
+/* Estilos para el Navbar */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que la navbar esté encima del hero */
+    transition: all 0.3s ease;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbar a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#navbar.scrolled a {
+    color: #333;
+}
+
+#navbar a:hover {
+    color: #E10098;
+}

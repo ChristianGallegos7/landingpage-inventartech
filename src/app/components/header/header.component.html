@@ -1,0 +1,36 @@
+<nav id="navbar" class="bg-transparent fixed top-0 left-0 w-full transition-all duration-300">
+    <div class="flex justify-between items-center w-[90%] mx-auto py-4">
+        <!-- Logo de la empresa -->
+        <div>
+            <a href="#" class="text-xl font-bold text-[#E10098]">Inventar Tech</a>
+        </div>
+
+        <!-- Barra de navegación para dispositivos grandes -->
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#" class="text-white hover:text-gray-300">Inicio</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Servicios</a></li>
+            <li><a href="#about" class="text-white hover:text-gray-300">Nosotros</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Proyectos</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Contacto</a></li>
+        </ul>
+
+        <!-- Botón de menú hamburguesa para dispositivos móviles -->
+        <button class="md:hidden text-white focus:outline-none" (click)="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menú desplegable para dispositivos móviles -->
+    <div *ngIf="isMenuOpen" class="md:hidden bg-white text-gray-800 shadow-lg">
+        <ul class="flex flex-col space-y-4 py-4 text-center">
+            <li><a href="#" class="hover:text-gray-600">Inicio</a></li>
+            <li><a href="#" class="hover:text-gray-600">Servicios</a></li>
+            <li><a href="#" class="hover:text-gray-600">Nosotros</a></li>
+            <li><a href="#" class="hover:text-gray-600">Proyectos</a></li>
+            <li><a href="#" class="hover:text-gray-600">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
