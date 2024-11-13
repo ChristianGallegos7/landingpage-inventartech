@@ -1,0 +1,49 @@
+/* Estilos para la sección de Servicios */
+#services {
+    background-color: #F8F1E5;
+  }
+  
+  #services .service-card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  #services .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  #services .service-card .icon {
+    background-color: #FE2990;
+    color: white;
+    border-radius: 9999px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  #services .service-card h3 {
+    color: #1B1D2B;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  #services .service-card p {
+    color: #787878;
+    margin-bottom: 1rem;
+  }
+  
+  #services .service-card a {
+    color: #FE2990;
+    font-weight: medium;
+    transition: color 0.3s ease;
+  }
+  
+  #services .service-card a:hover {
+    color: #4741d7;
+  }
