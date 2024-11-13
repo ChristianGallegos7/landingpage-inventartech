@@ -13,10 +13,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* :root{
-#1B1D2B
-#F8F1E5
-#B80065
-#787878
-#FFE066
-} */
+:root {
+    --color-primary: #FE2990;
+    /* Rosado */
+    --color-secondary: #4741d7;
+    /* Morado */
+    --color-tertiary: #F8F1E5;
+    /* Crema */
+    --color-text-light: #FFFFFF;
+    /* Blanco */
+    --color-text-dark: #1B1D2B;
+    /* Gris oscuro */
+}
