@@ -28,8 +28,7 @@
 
 
 #navbar a:hover {
-    color: #4741d7;
-    /* Color morado */
+    border-bottom: #4741d7 4px solid;
 }
 
 #navbar.scrolled a:hover {
