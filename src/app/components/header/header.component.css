@@ -18,20 +18,37 @@
 
 #navbar a {
     color: white;
-    transition: color 0.3s ease;
     font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #navbar.scrolled a {
     color: #333;
 }
 
+#navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #4741d7;
+    transition: width 0.3s ease;
+}
 
 #navbar a:hover {
-    border-bottom: #4741d7 4px solid;
+    color: #4741d7;
+    transform: translateY(-2px);
+}
+
+#navbar a:hover::after {
+    width: 100%;
 }
 
 #navbar.scrolled a:hover {
     color: #4741d7;
-    /* Color morado */
 }
