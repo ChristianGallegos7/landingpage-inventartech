@@ -1,52 +1,104 @@
 <section id="services" class="bg-[#F8F1E5] py-20">
     <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-8 text-[#1B1D2B]">Nuestros Servicios</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white shadow-lg rounded-lg p-6 transition duration-300 hover:scale-105">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-[#FE2990] rounded-full flex justify-center items-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+        <h2 class="text-4xl font-bold mb-12 text-[#1B1D2B] text-center">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Servicio 1: Desarrollo de Software -->
+            <a href="#" class="group relative block bg-black">
+                <img alt="Desarrollo de Software"
+                    src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixid=MnwzMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <fa-icon [icon]="faLaptop" class="text-white h-12 w-12"></fa-icon>
+                    <p class="text-xl font-bold text-white sm:text-2xl">Desarrollo de Software</p>
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Creamos soluciones personalizadas adaptadas a las necesidades específicas de tu negocio.
+                            </p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-[#1B1D2B]">Desarrollo de Software</h3>
                 </div>
-                <p class="text-[#787878] mb-4">Ofrecemos soluciones a medida para cubrir las necesidades de tu negocio.
-                </p>
-                <a href="#" class="text-[#FE2990] font-medium hover:text-[#4741d7]">Más Información</a>
-            </div>
-            <div class="bg-white shadow-lg rounded-lg p-6 transition duration-300 hover:scale-105">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-[#FE2990] rounded-full flex justify-center items-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                        </svg>
+            </a>
+
+            <!-- Servicio 2: Diseño UX/UI -->
+            <a href="#" class="group relative block bg-black">
+                <img alt="Diseño UX/UI"
+                    src="https://images.unsplash.com/photo-1579135868471-72beccbcbd2c?ixid=MnwzMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <fa-icon [icon]="faLightbulb" class="text-white h-12 w-12"></fa-icon>
+                    <p class="text-xl font-bold text-white sm:text-2xl">Diseño UX/UI</p>
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Creamos interfaces intuitivas y atractivas para mejorar la experiencia de usuario.
+                            </p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-[#1B1D2B]">Diseño UX/UI</h3>
                 </div>
-                <p class="text-[#787878] mb-4">Creamos interfaces intuitivas y atractivas para mejorar la experiencia de
-                    usuario.</p>
-                <a href="#" class="text-[#FE2990] font-medium hover:text-[#4741d7]">Más Información</a>
-            </div>
-            <div class="bg-white shadow-lg rounded-lg p-6 transition duration-300 hover:scale-105">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-[#FE2990] rounded-full flex justify-center items-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
+            </a>
+
+            <!-- Servicio 3: Estrategia Digital -->
+            <a href="#" class="group relative block bg-black">
+                <img alt="Estrategia Digital"
+                    src="https://images.unsplash.com/photo-1570533141506-ff64060d4b93?ixid=MnwzMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <fa-icon [icon]="faRocketlaunch" class="text-white h-12 w-12"></fa-icon>
+                    <p class="text-xl font-bold text-white sm:text-2xl">Estrategia Digital</p>
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Desarrollamos estrategias digitales que impulsan el crecimiento de tu negocio.
+                            </p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-[#1B1D2B]">Estrategia Digital</h3>
                 </div>
-                <p class="text-[#787878] mb-4">Desarrollamos estrategias digitales que impulsan el crecimiento de tu
-                    negocio.</p>
-                <a href="#" class="text-[#FE2990] font-medium hover:text-[#4741d7]">Más Información</a>
-            </div>
+            </a>
+
+            <!-- Servicio 4: Consultoría en Tecnología -->
+            <a href="#" class="group relative block bg-black">
+                <img alt="Consultoría en Tecnología"
+                    src="https://images.unsplash.com/photo-1570918152622-7a07c2b77e91?ixid=MnwzMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <!-- <fa-icon [icon]="faCogs" class="text-white h-12 w-12"></fa-icon> -->
+                    <p class="text-xl font-bold text-white sm:text-2xl">Consultoría en Tecnología</p>
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Brindamos consultoría experta para optimizar procesos con las mejores soluciones
+                                tecnológicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Servicio 5: Marketing Digital -->
+            <a href="#" class="group relative block bg-black">
+                <img alt="Marketing Digital"
+                    src="https://images.unsplash.com/photo-1592882993646-32862f8e9d83?ixid=MnwzMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <!-- <fa-icon [icon]="faBullhorn" class="text-white h-12 w-12"></fa-icon> -->
+                    <p class="text-xl font-bold text-white sm:text-2xl">Marketing Digital</p>
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Ayudamos a mejorar tu presencia en línea y conectar con tu público objetivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
         </div>
     </div>
 </section>
