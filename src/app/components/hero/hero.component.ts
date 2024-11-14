@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-hero',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
-export class HeroComponent {
+export class HeroComponent implements OnInit{
 
+  ngOnInit(): void {
+    Aos.init({
+      duration: 2000,
+      once: false
+    });
+  }
 }

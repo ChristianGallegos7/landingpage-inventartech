@@ -18,15 +18,18 @@ export class HeaderComponent {
 
   // Escucha el evento de scroll
   @HostListener('window:scroll', [])
-onWindowScroll() {
+  onWindowScroll() {
     const navbar = document.getElementById('navbar');
     if (navbar) {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     }
-}
+  }
+
+
+
 
 }

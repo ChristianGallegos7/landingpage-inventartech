@@ -16,5 +16,6 @@ import { ServicesComponent } from './components/services/services.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'landing-inventartech';
+
+  
 }
