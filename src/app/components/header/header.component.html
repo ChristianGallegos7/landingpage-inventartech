@@ -14,7 +14,7 @@
         </ul>
 
         <!-- Botón de menú hamburguesa para dispositivos móviles -->
-        <button class="md:hidden text-white focus:outline-none" (click)="toggleMenu()">
+        <button class="md:hidden text-dark focus:outline-none" (click)="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Menú desplegable para dispositivos móviles -->
-    <div *ngIf="isMenuOpen" class="md:hidden bg-white text-gray-800 shadow-lg">
+    <div *ngIf="isMenuOpen" class="md:hidden bg-transparent text-gray-800 shadow-lg">
         <ul class="flex flex-col space-y-4 py-4 text-center">
             <li><a href="#services" class="hover:text-gray-600">Servicios</a></li>
             <li><a href="#about" class="hover:text-gray-600">Nosotros</a></li>
