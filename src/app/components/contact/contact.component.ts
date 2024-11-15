@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent {
-
+export class ContactComponent implements OnInit {
+  ngOnInit(): void {
+    Aos.init({
+      duration: 1200,
+      once: true
+    })
+  }
 }
