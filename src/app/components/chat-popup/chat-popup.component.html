@@ -1,0 +1,45 @@
+<div
+  class="fixed bottom-4 right-4 w-96 shadow-lg rounded-lg bg-white border border-gray-200 overflow-hidden z-50">
+  <!-- Botón para abrir/cerrar el chat -->
+  <button
+    class="w-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] text-white py-3 font-semibold flex items-center justify-between px-4 hover:opacity-90 transition-all"
+    (click)="toggleChat()">
+    <span>{{ isOpen ? 'Cerrar Chat' : 'Abrir Chat' }}</span>
+    <span class="material-icons">
+      {{ isOpen ? '❌' : 'chat' }}
+    </span>
+  </button>
+
+  <!-- Contenedor del chat -->
+  <div *ngIf="isOpen" class="p-4">
+    <div class="h-64 overflow-y-auto border-b border-gray-200 bg-gray-50 p-2 rounded-t-md">
+      <!-- Mensajes -->
+      <div *ngFor="let message of messages" class="mb-3">
+        <div
+          [ngClass]="{
+            'text-right': message.sender === 'user',
+            'text-left': message.sender === 'bot'
+          }">
+          <div
+            [ngClass]="{
+              'inline-block px-4 py-2 text-sm rounded-lg bg-blue-100 text-blue-600 shadow-md': message.sender === 'user',
+              'inline-block px-4 py-2 text-sm rounded-lg bg-gray-200 text-gray-700 shadow-sm': message.sender === 'bot'
+            }">
+            {{ message.text }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Campo para escribir mensaje -->
+    <div class="mt-4 flex items-center gap-2">
+      <input type="text" class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
+        [(ngModel)]="newMessage" placeholder="Escribe tu mensaje" />
+      <button
+        class="bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-secondary)] transition-all"
+        (click)="sendMessage()">
+        <span class="material-icons">Enviar</span>
+      </button>
+    </div>
+  </div>
+</div>

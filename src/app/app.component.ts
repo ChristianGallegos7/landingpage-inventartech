@@ -8,11 +8,12 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+import { ChatPopupComponent } from './components/chat-popup/chat-popup.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AboutComponent, ContactComponent, FooterComponent, HeaderComponent, HeroComponent,ProjectsComponent, ServicesComponent, TestimoniosComponent],
+  imports: [RouterOutlet, AboutComponent, ContactComponent, FooterComponent, HeaderComponent, HeroComponent,ProjectsComponent, ServicesComponent, TestimoniosComponent, ChatPopupComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
