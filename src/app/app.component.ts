@@ -12,11 +12,11 @@ import { ChatPopupComponent } from './components/chat-popup/chat-popup.component
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AboutComponent, ContactComponent, HeaderComponent, HeroComponent,ProjectsComponent, ServicesComponent, TestimoniosComponent, ChatPopupComponent],
+  imports: [AboutComponent, ContactComponent, HeaderComponent, HeroComponent, ProjectsComponent, ServicesComponent, TestimoniosComponent, ChatPopupComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-  
+
 }
