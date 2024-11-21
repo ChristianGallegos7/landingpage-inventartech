@@ -7,12 +7,11 @@
             <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">Rellena el siguiente formulario y nos
                 pondremos en contacto contigo lo antes posible.</p>
         </div>
-        <form class="max-w-md mx-auto" name="contact" method="POST" data-netlify="true"
-            action="../../../index.html">
+        <form class="max-w-md mx-auto" method="POST" action="https://formsubmit.co/christiandc757@gmail.com">
             <div class="relative z-0 w-full mb-5 group">
                 <input type="text" name="floating_name" id="floating_name"
                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-[var(--color-secondary)] peer dark:text-white dark:bg-transparent"
-                    placeholder=" " required autocomplete="off" />
+                    placeholder=" " required />
                 <label for="floating_name"
                     class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[var(--color-secondary)] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                     Nombre
@@ -21,24 +20,12 @@
             <div class="relative z-0 w-full mb-5 group">
                 <input type="email" name="floating_email" id="floating_email"
                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-[var(--color-secondary)] peer dark:text-white"
-                    placeholder=" " required autocomplete="off" />
+                    placeholder=" " required />
                 <label for="floating_email"
                     class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[var(--color-secondary)] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                     Correo Electrónico
                 </label>
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="tel" name="floating_phone" id="floating_phone"
-                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-[var(--color-secondary)] peer dark:text-white"
-                    placeholder=" " pattern="(?:\d{8}|\d{7}|\d{9}|\d{10})" required
-                    title="Ingresa un número de teléfono válido: Guatemala (5555-5555), Perú (999-999-999 o 444-4444), Ecuador (099-999-9999 o 222-2222)"
-                    autocomplete="off" />
-                <label for="floating_phone"
-                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-[var(--color-secondary)] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                    Teléfono
-                </label>
-            </div>
-
             <div class="relative z-0 w-full mb-5 group">
                 <textarea name="floating_message" id="floating_message" rows="4"
                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-[var(--color-secondary)] peer dark:text-white"
@@ -48,8 +35,6 @@
                     Mensaje
                 </label>
             </div>
-            <input type="hidden" name="form-name" value="contact" />
-
             <button class="ov-btn-slide-left w-full" type="submit">
                 Enviar
             </button>
