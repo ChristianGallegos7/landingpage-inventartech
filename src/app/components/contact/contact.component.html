@@ -7,7 +7,7 @@
             <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">Rellena el siguiente formulario y nos
                 pondremos en contacto contigo lo antes posible.</p>
         </div>
-        <form class="max-w-md mx-auto" name="contact" data-netlify="true"
+        <form class="max-w-md mx-auto" name="contact" method="POST" data-netlify="true"
             action="https://landingpage-inventartech.netlify.app">
             <div class="relative z-0 w-full mb-5 group">
                 <input type="text" name="floating_name" id="floating_name"
@@ -48,6 +48,8 @@
                     Mensaje
                 </label>
             </div>
+            <input type="hidden" name="form-name" value="contact" />
+
             <button class="ov-btn-slide-left w-full" type="submit">
                 Enviar
             </button>
