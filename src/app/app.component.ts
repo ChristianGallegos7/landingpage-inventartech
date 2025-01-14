@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -8,6 +8,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TestimoniosComponent } from './components/testimonios/testimonios.component';
 import { ChatPopupComponent } from './components/chat-popup/chat-popup.component';
+import { SafeUrlPipe } from './safe-url.pipe';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,11 @@ import { ChatPopupComponent } from './components/chat-popup/chat-popup.component
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
+  iframeURL = "";
 
+  constructor() { }
+
+  ngOnInit(): void { }
 }
